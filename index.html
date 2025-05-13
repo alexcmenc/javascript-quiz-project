@@ -10,10 +10,14 @@
       <header>
         <h1>JavaScript Quiz</h1>
       </header>
-
+      <!--START VIEW-->
+      <div id="startView">
+        <div id="welcome"><img src="./styles/images/test-yourself-symbol-red-stamp-260nw-2399553747.jpg" alt=""></div>
+        <button id="startButton" class="button-primary">Start Quiz</button>
+      </div>
       <!-- Quiz View -->
       <!-- Note: this view is shown initially and for each question -->
-      <div id="quizView" class="view">
+      <div id="quizView" class="view" style="display: none">
         <div id="progress">
           <div id="progressBar"></div>
         </div>
@@ -26,9 +30,8 @@
         <div id="timeRemaining">Remaining Time: <span>00:00</span></div>
         <button id="nextButton" class="button-primary">Answer</button>
       </div>
-
       <!-- End Quiz View -->
-      <!-- Note: this view is initially hidden using the style attribute 'display: none' -->      
+      <!-- Note: this view is initially hidden using the style attribute 'display: none' -->
       <div id="endView" class="view" style="display: none">
         <div id="result-progress">
           <div id="resultProgressBar"></div>
@@ -39,16 +42,15 @@
           <div id="result"></div>
         </div>
         <!-- The below 'Restart Quiz' button is commented out because it is not used initially -->
-        <!-- <button id="restartButton" class="button-secondary">Restart Quiz</button> -->
+        <button id="restartButton" class="button-secondary">
+          Restart Quiz
+        </button>
       </div>
     </div>
-
-    
     <!-- The scripts are placed at the end of the document so that all the HTML elements are loaded before we try to access them -->
     <!-- Important: Leave this as it is. Do not change the order of the scripts! -->
     <script src="src/question.js"></script>
     <script src="src/quiz.js"></script>
     <script src="src/index.js"></script>
-    
   </body>
 </html>
